@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif; }
+  
+  body {
+    background-color: #87ceeb;
+    margin: clamp(2rem, 5vw, 8rem); }
+  
+  a {
+    text-decoration: none;
+    background-color: none;
+    color: #87ceeb;
+    pointer-events: var(0.2rem white); }
+  
+  .left_content {
+    background-color: #00324a;
+    padding: 1rem 2rem; }
+    .left_content .profile {
+      border-bottom: 2px solid white; }
+      .left_content .profile img {
+        width: 100%;
+        border-radius: 50%;
+        border: 2px solid gray; }
+      .left_content .profile .name {
+        font-size: 0.9rem;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.2rem 0; }
+      .left_content .profile .career {
+        font-size: 1.1rem;
+        color: skyblue;
+        letter-spacing: 1px;
+        text-align: center;
+        padding-bottom: 1rem; }
+    .left_content .contact-info {
+      font-size: .9rem;
+      color: white;
+      letter-spacing: 0.6px;
+      text-align: left;
+      margin: auto;
+      padding: 1.2rem 5px 10px 5px; }
+      .left_content .contact-info .main-title {
+        padding: 1rem 0;
+        color: #87ceeb;
+        text-decoration: underline; }
+      .left_content .contact-info ul {
+        padding-top: 0.2rem;
+        padding-left: 0; }
+        .left_content .contact-info ul li {
+          padding: 10px 0;
+          list-style: none; }
+          .left_content .contact-info ul li i {
+            padding-right: 20px;
+            font-size: 0.9rem;
+            color: orange; }
+    .left_content .skills-section {
+      font-size: .9rem;
+      color: white;
+      letter-spacing: 0.6px;
+      text-align: left;
+      margin: auto;
+      padding: 1.2rem 5px 10px 5px; }
+      .left_content .skills-section .main-title {
+        padding: 1rem 0;
+        color: #87ceeb;
+        text-decoration: underline; }
+      .left_content .skills-section .skill_items {
+        padding: 15px 0; }
+        .left_content .skills-section .skill_items .skill_item {
+          margin-bottom: 10px; }
+          .left_content .skills-section .skill_items .skill_item .progress-bar {
+            background-color: transparent;
+            border: 1px solid;
+            border-radius: 20px; }
+            .left_content .skills-section .skill_items .skill_item .progress-bar .progress-item {
+              background-color: orange;
+              animation: progress 5s forwards; }
+            .left_content .skills-section .skill_items .skill_item .progress-bar .progress-html {
+              --main-color: 98%; }
+            .left_content .skills-section .skill_items .skill_item .progress-bar .progress-CSS {
+              --main-color: 98%; }
+            .left_content .skills-section .skill_items .skill_item .progress-bar .progress-js {
+              --main-color: 95%; }
+            .left_content .skills-section .skill_items .skill_item .progress-bar .progress-wp {
+              --main-color: 99%; }
+      .left_content .skills-section .skill-title {
+        padding: 1rem 0;
+        color: #82eefd;
+        text-decoration: none;
+        font-style: italic; }
+  
+  @keyframes progress {
+    0% {
+      width: 0%; }
+    100% {
+      width: var(--main-color); } }
+  .right_content {
+    background-color: #fff;
+    padding: 2rem 3rem; }
+    .right_content h2.right-title {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #087ba8ef;
+      margin-bottom: 1rem;
+      position: relative; }
+      .right_content h2.right-title:after {
+        content: "";
+        position: absolute;
+        height: 0.1rem;
+        background-color: #087ba8ef;
+        border-radius: 10px; }
+    .right_content section.aboutme,
+    .right_content section.experience,
+    .right_content section.education {
+      margin-bottom: 40px; }
+    .right_content section.experience .tl-title {
+      letter-spacing: .6px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: #4f8195;
+      line-height: 1.5rem; }
+    .right_content section.experience ul {
+      line-height: 1.6rem;
+      color: gray;
+      font-size: medium;
+      text-decoration: none; }
+      .right_content section.experience ul li {
+        list-style: circle; }
+    .right_content section.experience .experience_item {
+      margin-bottom: 40px; }
+    .right_content section.education {
+      /* The actual timeline (the vertical ruler) */
+      /* The actual timeline (the vertical ruler) */
+      /* Container around content */
+      /* The circles on the timeline */
+      /* Place the container to the left */
+      /* Place the container to the right */
+      /* Add arrows to the left container (pointing right) */
+      /* Add arrows to the right container (pointing left) */
+      /* Fix the circle for containers on the right side */
+      /* The actual content */
+      /* Media queries - Responsive timeline on screens less than 600px wide */ }
+      .right_content section.education .education_item {
+        margin-bottom: 20px; }
+        .right_content section.education .education_item .tl-title {
+          letter-spacing: .6px;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          color: #4f8195;
+          font-weight: 600; }
+        .right_content section.education .education_item .edu_date {
+          line-height: 1.5rem;
+          color: gray;
+          font-size: medium;
+          text-decoration: none; }
+        .right_content section.education .education_item .tl-title-2 {
+          letter-spacing: .6px;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          color: #092c3a;
+          font-weight: 600; }
+      .right_content section.education .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto; }
+      .right_content section.education .timeline::after {
+        content: '';
+        position: absolute;
+        width: 3px;
+        background-color: #087ba8ef;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px; }
+      .right_content section.education .container {
+        padding: 10px 10px;
+        position: relative;
+        background-color: inherit;
+        width: 51%; }
+      .right_content section.education .container::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: -14px;
+        background-color: white;
+        border: 4px solid skyblue;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1; }
+      .right_content section.education .left {
+        left: -26%; }
+      .right_content section.education .right {
+        left: 26%; }
+      .right_content section.education .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid white;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent white; }
+      .right_content section.education .right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        left: 30px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent; }
+      .right_content section.education .right::after {
+        left: -16px; }
+      .right_content section.education .content {
+        padding: 20px 30px;
+        background-color: white;
+        position: relative;
+        border-radius: 6px; }
+      @media screen and (max-width: 600px) {
+        .right_content section.education {
+          /* Place the timelime to the left */
+          /* Full-width containers */
+          /* Make sure that all arrows are pointing leftwards */
+          /* Make sure all circles are at the same spot */
+          /* Make all right containers behave like the left ones */ }
+          .right_content section.education .timeline::after {
+            left: 31px; }
+          .right_content section.education .container {
+            width: 100%;
+            padding-left: 70px;
+            padding-right: 25px; }
+          .right_content section.education .container::before {
+            left: 60px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent; }
+          .right_content section.education .left::after, .right_content section.education .right::after {
+            left: 15px; }
+          .right_content section.education .right {
+            left: 0%; } }
+    .right_content section.certification h5 {
+      padding-top: 20px;
+      color: gray;
+      outline: none; }
+    .right_content section.certification a {
+      background-color: #094a68ed;
+      cursor: pointer;
+      outline: none;
+      color: white;
+      font-size: 18px;
+      padding: 5px 10px;
+      box-shadow: 1px 2px 5px 1px #094a68ed; }
+  
+  .button_row {
+    padding: 10px 20px; }
+    .button_row .pri {
+      font-size: 20px;
+      margin: 0 15px;
+      background-color: orange;
+      cursor: pointer;
+      pointer-events: visible 3s;
+      padding: 5px 5px;
+      border: none;
+      outline: none;
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px black;
+      transition: .5s; }
+  
+      .button_row .pri:hover{
+        background-color: skyblue;
+      }
+  
+      .button_row .pri *{
+        visibility: visible;
+      }
+      
+  
+  @media (max-width: 576px) {
+    .right_content h2.right-title:after {
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      top: unset; }
+    .right_content section.experience .dates {
+      text-align: left; }
+    .right_content .timeline {
+      display: none; }
+    .right_content .timeline_mobile {
+      display: block; } }
+  @media (min-width: 576px) {
+    .right_content h2.right-title:after {
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      top: unset; }
+    .right_content section.experience .dates {
+      text-align: left; }
+    .right_content .timeline {
+      display: none; }
+    .right_content .timeline_mobile {
+      display: block; } }
+  @media (min-width: 768px) {
+    .right_content h2.right-title:after {
+      width: 60%;
+      top: 50%;
+      right: 0;
+      bottom: unset;
+      left: unset; }
+    .right_content section.experience .dates {
+      text-align: right; }
+    .right_content .timeline {
+      display: block; }
+    .right_content .timeline_mobile {
+      display: none; } }
+  
+  /*# sourceMappingURL=stylev2.css.map */
+  
